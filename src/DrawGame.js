@@ -57,9 +57,11 @@ const DrawGame = (props) => {
   };
 
   return (
-    <div>
+    <div class="drawGame">
       <div className="titleContainer">
-        <h2 className="title">[React] 抽獎小遊戲 陣列渲染實作練習</h2>
+        <h2 className="title titleDrawGame">
+          [React] 抽獎小遊戲 陣列渲染實作練習
+        </h2>
       </div>
       <div className="drawBox">
         <button onClick={buttonClick} style={btnStyle} className="btn">

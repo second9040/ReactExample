@@ -1,27 +1,6 @@
-.titleContainer {
-  position: relative;
-  margin: 5% 5% 0;
-}
-
-.title {
-  text-align: center;
-}
-
-.title::before,
-.title::after {
-  position: absolute;
-  content: "";
-  height: 2px;
+.titleDrawGame::before,
+.titleDrawGame::after {
   width: calc(50% - 230px);
-  top: 55%;
-  background: #666;
-}
-
-.title::before {
-  left: 0;
-}
-.title::after {
-  right: 0;
 }
 .drawBox {
   text-align: center;
@@ -37,23 +16,25 @@
 .drawBox div {
   min-width: 300px;
 }
-.btn,
-.clearStyle {
+.drawBox .btn,
+.drawBox .clearStyle {
   outline: none;
   color: #fff;
   margin: 15px;
 }
 
-.btn:hover,
-.clearStyle:hover {
+.drawBox .btn:hover,
+.drawBox .clearStyle:hover {
   opacity: 0.5;
   cursor: pointer;
 }
-.clearStyle:disabled {
+
+.drawBox .clearStyle:disabled {
   opacity: 1;
   cursor: no-drop;
 }
-.clearStyle {
+
+.drawBox .clearStyle {
   color: #fff;
   background: #ff88bb;
   border: solid #ff88bb 1px;
@@ -61,7 +42,7 @@
   border-radius: 10px;
 }
 
-.instruction {
+.drawGame .instruction {
   margin: 0 20% 5%;
   border: solid #eee;
   color: #666;
@@ -69,31 +50,22 @@
   padding: 0 5%;
 }
 
-.instruction h3 {
+.drawGame .instruction h3 {
   padding-bottom: 15px;
   border-bottom: solid #eee 2px;
 }
 
-.instruction ul {
+.drawGame .instruction ul {
   margin: 0 auto;
   text-align: left;
   width: 80%;
 }
 
-.instruction ul li {
+.drawGame .instruction ul li {
   margin: 5% 0;
 }
 
 @media screen and (max-width: 600px) {
-  .titleContainer {
-    border-top: solid #ddd 5px;
-  }
-
-  .title::before,
-  .title::after {
-    width: 0;
-  }
-
   .drawBox {
     display: block;
   }
@@ -102,16 +74,16 @@
     min-width: auto;
   }
 
-  .instruction {
+  .drawGame .instruction {
     margin: 0 5% 5%;
   }
 
-  .instruction ul {
+  .drawGame .instruction ul {
     width: auto;
     padding: 0;
   }
 
-  .instruction ul li {
+  .drawGame .instruction ul li {
     margin: 10% 0;
     list-style-type: none;
   }
