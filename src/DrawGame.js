@@ -57,7 +57,7 @@ const DrawGame = (props) => {
   };
 
   return (
-    <div class="drawGame">
+    <div className="drawGame">
       <div className="titleContainer">
         <h2 className="title titleDrawGame">
           [React] 抽獎小遊戲 陣列渲染實作練習
