@@ -1,0 +1,66 @@
+.titleProgressBar::before,
+.titleProgressBar::after {
+  width: calc(50% - 230px);
+}
+
+.progressSettingField {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.progressContainer {
+  margin: 0 auto;
+}
+
+.progressSettingField input {
+  padding: 6px;
+  border: solid #ddd 1px;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+.progressSettingField input:focus {
+  border: solid #999 1px;
+}
+.progressBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0 30px;
+}
+
+.barText {
+  margin: 20px 0;
+}
+
+@media screen and (max-width: 350px) {
+  .forMobileLayout {
+    display: flex;
+    justify-content: center;
+  }
+
+  .progressContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 200px;
+    margin: 0;
+  }
+  .progressContainer .add {
+    order: 1;
+  }
+
+  .progressContainer input {
+    order: 2;
+    margin: 20px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+  }
+
+  .progressContainer .sub {
+    order: 3;
+  }
+}

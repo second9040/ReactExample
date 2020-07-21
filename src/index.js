@@ -2,11 +2,13 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 import DrawGame from "./DrawGame";
+import ProgressBar from "./ProgressBar";
 import "./index.css";
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
   <React.StrictMode>
+    <ProgressBar />
     <DrawGame>
       <span>
         點選 [<span style={{ color: "#a49ef0" }}>抽獎</span>]
