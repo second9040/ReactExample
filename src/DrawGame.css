@@ -42,29 +42,6 @@
   border-radius: 10px;
 }
 
-.drawGame .instruction {
-  margin: 0 20% 5%;
-  border: solid #eee;
-  color: #666;
-  text-align: center;
-  padding: 0 5%;
-}
-
-.drawGame .instruction h3 {
-  padding-bottom: 15px;
-  border-bottom: solid #eee 2px;
-}
-
-.drawGame .instruction ul {
-  margin: 0 auto;
-  text-align: left;
-  width: 80%;
-}
-
-.drawGame .instruction ul li {
-  margin: 5% 0;
-}
-
 @media screen and (max-width: 600px) {
   .drawBox {
     display: block;
@@ -72,19 +49,5 @@
   .drawBox div {
     margin: 0 auto 5%;
     min-width: auto;
-  }
-
-  .drawGame .instruction {
-    margin: 0 5% 5%;
-  }
-
-  .drawGame .instruction ul {
-    width: auto;
-    padding: 0;
-  }
-
-  .drawGame .instruction ul li {
-    margin: 10% 0;
-    list-style-type: none;
   }
 }

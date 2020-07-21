@@ -14,7 +14,7 @@ code {
 
 .titleContainer {
   position: relative;
-  margin: 5% 5% 0;
+  margin: 50px 5% 0;
 }
 
 .title {
@@ -37,6 +37,26 @@ code {
   right: 0;
 }
 
+.btnStyle {
+  outline: none;
+  color: #fff;
+  border: solid #a49ef0 1px;
+  background: #a49ef0;
+  padding: 5px 10px;
+  border-radius: 3px;
+  margin: 0 10px;
+}
+
+.btnStyle:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
 @media screen and (max-width: 600px) {
   .titleContainer {
     border-top: solid #ddd 5px;
@@ -46,4 +66,41 @@ code {
   .title::after {
     width: 0;
   }
+
+  .instruction {
+    margin: 0 5% 5%;
+  }
+
+  .instruction ul {
+    width: auto;
+    padding: 0;
+  }
+
+  .instruction ul li {
+    margin: 10% 0;
+    list-style-type: none;
+  }
+}
+
+.instruction {
+  margin: 0 20% 5%;
+  border: solid #eee;
+  color: #666;
+  text-align: center;
+  padding: 0 5%;
+}
+
+.instruction h3 {
+  padding-bottom: 15px;
+  border-bottom: solid #eee 2px;
+}
+
+.instruction ul {
+  margin: 0 auto;
+  text-align: left;
+  width: 80%;
+}
+
+.instruction ul li {
+  margin: 5% 0;
 }
